@@ -50,10 +50,18 @@ h1{
    color: white;
    padding: 10px 1em;
    border-radius: 10px;
-   border: 2px #FFF;
+   border: 1px #FFF;
    margin: 1em;
    margin-top: 30px;
    margin-left: 1cm;
+   box-shadow: 0 2px #999;
+   transition: all 0.5s;
+}
+button:hover{
+  background-color: navy;
+}
+.main-heading button:active{
+  transform: translateY(4px);
 }
 /* second portion*/
 
@@ -143,6 +151,32 @@ h2{
     background-color: #3882F6;
     border-radius: 10px;
     color: #E5E7EB;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .sign-up-container button:hover{
+    background-color: navy;
+  }
+  .sign-up-container button span{
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+  .sign-up-container button span:after{
+    content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+  .sign-up-container button:hover span {
+    padding-right: 25px;
+  }
+  .sign-up-container button:hover span:after {
+    opacity: 1;
+    right: 0;
   }
 
   .sign-up-container p{
